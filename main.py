@@ -103,7 +103,7 @@ def send_main(file_path, number_str):
 
 if __name__ == "__main__":
     filename = r'today_moex_data.xlsx'
-    file_path = os.path.abspath(filename)
     get_table(filename)
+    file_path = os.path.abspath(filename)
     number_str = table_refactoring(file_path)
     send_main(file_path, number_str)
